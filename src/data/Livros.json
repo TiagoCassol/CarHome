@@ -1,0 +1,27 @@
+[
+    {
+        "id":1,
+        "titulo":"O Pequeno Príncipe",
+        "imagem":"pequenoprincipe.jpg",
+        "preco":51
+    },
+    {
+        "id":2,
+        "titulo":"Livro 2",
+        "imagem":"pequenoprincipe.jpg",
+        "preco":18
+    },
+    {
+        "id":3,
+        "titulo":"Livro 3",
+        "imagem":"pequenoprincipe.jpg",
+        "preco":32
+    },
+    {
+        "id":4,
+        "titulo":"Livro 4",
+        "imagem":"pequenoprincipe.jpg",
+        "preco":85
+    }
+]
+
