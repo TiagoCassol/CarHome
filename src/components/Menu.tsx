@@ -21,8 +21,8 @@ export default function Menu() {
                 <a href="#" className="w3-bar-item w3-button w3-hide-small">Menu 2</a>
                 <a href="#" className="w3-bar-item w3-button w3-hide-small">Menu 3</a> */}
                 <Link to="/" className="w3-bar-item w3-button w3-hide-small">Home</Link>
-                <Link to="/lista" className="w3-bar-item w3-button w3-hide-small">Livros</Link>
-                <Link to="/cadastro" className="w3-bar-item w3-button w3-hide-small">Cadastro</Link>
+                <Link to="/lista" className="w3-bar-item w3-button w3-hide-small">Carros</Link>
+                <Link to="/cadastro" className="w3-bar-item w3-button w3-hide-small">Anuncie</Link>
                 <a href="#" className="w3-bar-item w3-button w3-right">
                     <i className="fa fa-search w3-xlarge"></i>
                 </a>

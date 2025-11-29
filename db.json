@@ -1,46 +1,88 @@
 {
-  "livros": [
+  "carros": [
     {
-      "id": "1",
-      "titulo": "O Pequeno Príncipe",
-      "imagem": "pequenoprincipe.jpg",
-      "preco": 51
+      "id": 1,
+      "modelo": "Golf",
+      "marca": "Volkswagen",
+      "ano": 2020,
+      "preco": 85000,
+      "imagem": "https://images.unsplash.com/photo-1563720223480-8ddab2319e1a?w=400",
+      "quilometragem": 45000,
+      "combustivel": "flex",
+      "cambio": "automático",
+      "cor": "preto",
+      "localizacao": "São Paulo, SP",
+      "descricao": "Carro em perfeito estado, único dono, revisões em concessionária."
     },
     {
-      "id": "2",
-      "titulo": "Livro 2",
-      "imagem": "pequenoprincipe.jpg",
-      "preco": 18
+      "id": 2,
+      "modelo": "Civic",
+      "marca": "Honda",
+      "ano": 2019,
+      "preco": 95000,
+      "imagem": "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=400",
+      "quilometragem": 35000,
+      "combustivel": "flex",
+      "cambio": "automático",
+      "cor": "prata",
+      "localizacao": "Rio de Janeiro, RJ",
+      "descricao": "Excelente estado, ar-condicionado digital, teto solar."
     },
     {
-      "id": "3",
-      "titulo": "Livro 3",
-      "imagem": "pequenoprincipe.jpg",
-      "preco": 32
+      "id": 3,
+      "modelo": "Onix",
+      "marca": "Chevrolet",
+      "ano": 2021,
+      "preco": 65000,
+      "imagem": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=400",
+      "quilometragem": 25000,
+      "combustivel": "flex",
+      "cambio": "manual",
+      "cor": "branco",
+      "localizacao": "Belo Horizonte, MG",
+      "descricao": "Semi-novo, ainda na garantia da fábrica."
     },
     {
-      "id": "4",
-      "titulo": "Livro 4",
-      "imagem": "pequenoprincipe.jpg",
-      "preco": 85
+      "id": 4,
+      "modelo": "Corolla",
+      "marca": "Toyota",
+      "ano": 2018,
+      "preco": 88000,
+      "imagem": "https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=400",
+      "quilometragem": 60000,
+      "combustivel": "flex",
+      "cambio": "automático",
+      "cor": "cinza",
+      "localizacao": "Curitiba, PR",
+      "descricao": "Bem conservado, pneus novos, documentação em dia."
     },
     {
-      "id": "5",
-      "titulo": "Livro 5",
-      "imagem": "pequenoprincipe.jpg",
-      "preco": 90
+      "id": 5,
+      "modelo": "HB20",
+      "marca": "Hyundai",
+      "ano": 2022,
+      "preco": 72000,
+      "imagem": "https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=400",
+      "quilometragem": 15000,
+      "combustivel": "flex",
+      "cambio": "automático",
+      "cor": "vermelho",
+      "localizacao": "Porto Alegre, RS",
+      "descricao": "Quase novo, único dono, completo."
     },
     {
-      "id": "6b38",
-      "titulo": "Livro 6",
-      "imagem": "pequenoprincipe.jpg",
-      "preco": 100
-    },
-    {
-      "id": "9e8a",
-      "titulo": "Livro 7",
-      "imagem": "pequenoprincipe.jpg",
-      "preco": 100
+      "id": 6,
+      "modelo": "Compass",
+      "marca": "Jeep",
+      "ano": 2021,
+      "preco": 125000,
+      "imagem": "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=400",
+      "quilometragem": 30000,
+      "combustivel": "flex",
+      "cambio": "automático",
+      "cor": "branco",
+      "localizacao": "Brasília, DF",
+      "descricao": "SUV premium, teto solar, conectividade Apple CarPlay/Android Auto."
     }
   ]
 }

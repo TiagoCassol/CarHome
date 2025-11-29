@@ -1,7 +1,7 @@
 import { Outlet } from "react-router"
 import Carroussel from "./components/Carroussel"
-import FormLivros from "./components/FormLivros"
-import ListCardLivros from "./components/ListCardLivros"
+import FormCarros from "./components/FormCarros"
+import ListCardCarros from "./components/ListCardCarros"
 import Menu from "./components/Menu"
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       <Menu></Menu>
       <main>
         <div className="w3-container w3-padding-16 w3-margin-top">
-          <h1>Minha Petshop</h1>
+          <h1>CarHome</h1>
         </div>
         <Carroussel />
         <div className="w3-row w3-container w3-margin-top">
@@ -20,7 +20,7 @@ function App() {
       </main>
 
       <footer className="w3-container w3-margin-top w3-black ">
-        <p className="w3-center">Realizado por Ries (imagens retiradas de cultura.com.br)</p>
+        <p className="w3-center"></p>
       </footer>
 
     </>
