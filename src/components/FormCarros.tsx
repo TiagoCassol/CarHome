@@ -1,4 +1,4 @@
-import { useState, type ChangeEvent, type FormEvent } from "react";
+import { useState, type FormEvent } from "react";
 import CarroApiService from "../service/CarroApiService";
 
 export default function FormCarros() {
@@ -11,7 +11,7 @@ export default function FormCarros() {
     const [descricao, setDescricao] = useState("");
 
     function cadastrarCarro(event: FormEvent<HTMLFormElement>) {
-        event.preventDefault();        
+        event.preventDefault();
         CarroApiService.inserir({
             modelo: modelo,
             marca: marca,
@@ -20,9 +20,9 @@ export default function FormCarros() {
             quilometragem: quilometragem,
             localizacao: localizacao,
             descricao: descricao,
-            imagem: "carro-default.jpg", 
-            combustivel: "flex", 
-            cambio: "manual" 
+            imagem: "carro-default.jpg",
+            combustivel: "flex",
+            cambio: "manual"
         }).then(() => {
             alert(`Carro ${marca} ${modelo} anunciado com sucesso!`);
             setModelo('');
@@ -40,14 +40,14 @@ export default function FormCarros() {
     return (
         <form onSubmit={cadastrarCarro} className="w3-container w3-padding">
             <h2>Anunciar Carro</h2>
-            
+
             <div className="w3-row-padding">
                 <div className="w3-half">
                     <label>Marca:</label>
                     <input className="w3-input w3-border" type="text" name="marca" value={marca}
                         onChange={(ev) => setMarca(ev.target.value)} required />
                 </div>
-                
+
                 <div className="w3-half">
                     <label>Modelo:</label>
                     <input className="w3-input w3-border" type="text" name="modelo" value={modelo}
@@ -62,13 +62,13 @@ export default function FormCarros() {
                     <input className="w3-input w3-border" type="number" name="ano" value={ano}
                         onChange={(ev) => setAno(+ev.target.value)} min="1990" max={new Date().getFullYear() + 1} required />
                 </div>
-                
+
                 <div className="w3-third">
                     <label>Preço (R$):</label>
                     <input className="w3-input w3-border" type="number" name="preco" value={preco}
                         onChange={(ev) => setPreco(+ev.target.value)} min="0" step="100" required />
                 </div>
-                
+
                 <div className="w3-third">
                     <label>Quilometragem:</label>
                     <input className="w3-input w3-border" type="number" name="quilometragem" value={quilometragem}

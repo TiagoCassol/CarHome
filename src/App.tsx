@@ -1,7 +1,5 @@
 import { Outlet } from "react-router"
 import Carroussel from "./components/Carroussel"
-import FormCarros from "./components/FormCarros"
-import ListCardCarros from "./components/ListCardCarros"
 import Menu from "./components/Menu"
 
 function App() {
