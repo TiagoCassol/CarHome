@@ -1,10 +1,13 @@
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import { BrowserRouter } from 'react-router'
-import Router from './Router.tsx'
+import { BrowserRouter } from 'react-router-dom'
+import Router from './Router'
+import React from 'react'
 
 createRoot(document.getElementById('root')!).render(
-  <BrowserRouter>
-    <Router />
-  </BrowserRouter>,
+  <React.StrictMode>
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
+  </React.StrictMode>
 )
