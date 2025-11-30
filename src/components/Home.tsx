@@ -18,6 +18,9 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
+  const sanitize = (s: string) =>
+    encodeURIComponent(s.toLowerCase().trim().replace(/\s+/g, "-").replace(/[^a-z0-9\-]/g, ""));
+
   useEffect(() => {
     setLoading(true);
     CarroApiService.listar()
@@ -49,10 +52,10 @@ export default function Home() {
         <p>Uma mostra por marca</p>
 
         <div className="w3-row">
-          {brandCars.map((car) => (
-            // use brand as key only if unique; otherwise use car.id
-            <BrandCard key={car.marca} brand={car.marca} image={car.imagem} />
-          ))}
+          {brandCars.map((car) => {
+            const brandImage = `/brands/${sanitize(car.marca)}.jpg`;
+            return <BrandCard key={car.id} brand={car.marca} image={brandImage} />;
+          })}
         </div>
       </div>
     </div>

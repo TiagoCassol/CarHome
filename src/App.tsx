@@ -1,4 +1,4 @@
-import { Outlet } from "react-router"
+import { Outlet } from "react-router-dom"
 import Carroussel from "./components/Carroussel"
 import Menu from "./components/Menu"
 
