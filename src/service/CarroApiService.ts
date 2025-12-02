@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const URI = "http://localhost:3000/carros";
+const URI = "http://localhost:3000/api/carros";
 
 async function listar() {
     const response = await axios.get(URI);
@@ -37,6 +37,28 @@ async function buscarPorFaixaPreco(precoMin: number, precoMax: number) {
     return response.data;
 }
 
+async function deletar(id: number): Promise<void> {
+    return fetch(`http://localhost:3000/api/carros/${id}`, {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json',
+      }
+    })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`Erro ${response.status}: ${response.statusText}`);
+      }
+      return response.json(); // Seu backend retorna JSON
+    })
+    .then(data => {
+      console.log('✅ Carro deletado no backend:', data);
+    })
+    .catch(error => {
+      console.error('❌ Falha ao deletar:', error);
+      throw error;
+    });
+  }
+
 export default {
     listar,
     inserir,
@@ -44,5 +66,6 @@ export default {
     atualizar,
     excluir,
     buscarPorMarca,
-    buscarPorFaixaPreco
+    buscarPorFaixaPreco,
+    deletar
 }
