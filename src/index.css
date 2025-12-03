@@ -65,3 +65,170 @@
     max-height: 140px;     /* cap the height so it stays small on very large screens */
   }
 }
+/* ===== NOVOS ESTILOS PARA DEIXAR O SITE MAIS BONITO ===== */
+
+/* Estilos gerais melhorados */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+}
+
+/* Header principal mais atraente */
+.w3-container h1 {
+  background: linear-gradient(90deg, #1e3c72, #2a5298);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 800;
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Menu melhorado */
+.w3-bar.w3-black {
+  background: linear-gradient(90deg, #1e3c72, #2a5298) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.w3-bar-item.w3-button:hover {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+/* Botão Login melhorado */
+.w3-right .w3-button {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  margin-right: 10px;
+  padding: 8px 16px !important;
+}
+
+.w3-right .w3-button:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+  transform: scale(1.05);
+}
+
+/* Menu Mobile */
+.w3-bar-block.w3-black {
+  background: linear-gradient(180deg, #1e3c72, #2a5298) !important;
+}
+
+/* Cards de marca melhorados */
+.brand-card {
+  border-radius: 12px !important;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: white !important;
+  border: 1px solid #e0e0e0 !important;
+}
+
+.brand-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+  border-color: #2a5298 !important;
+}
+
+.brand-img {
+  height: 180px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.brand-card:hover .brand-img {
+  transform: scale(1.05);
+}
+
+/* Título das marcas */
+.brand-card .w3-container {
+  padding: 20px 10px !important;
+}
+
+.brand-card h3 {
+  color: #1e3c72;
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+/* Footer melhorado */
+footer.w3-black {
+  background: linear-gradient(90deg, #1e3c72, #2a5298) !important;
+  padding: 30px 0 !important;
+  margin-top: 50px !important;
+}
+
+footer p {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+/* Carousel melhorado */
+.carousel-container {
+  height: 100px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .w3-container h1 {
+    font-size: 2.2rem;
+  }
+  
+  .brand-card {
+    margin-bottom: 20px;
+  }
+  
+  .carousel-container {
+    height: 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .w3-container h1 {
+    font-size: 1.8rem;
+  }
+  
+  .brand-img {
+    height: 150px;
+  }
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.w3-row > div {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Efeito de loading */
+.loading-spinner {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #1e3c72;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
